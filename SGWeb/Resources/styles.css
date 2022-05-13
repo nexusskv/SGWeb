@@ -1,0 +1,28 @@
+body {
+    background-color: powderblue;
+}
+
+h2 {
+    color: black;
+    font-family: verdana;
+    font-size: 300%;
+    text-align: center;
+}
+
+label {
+    color: black;
+    font-family: verdana;
+    font-size: 300%;
+    display: block;
+    text-align: center;
+}
+
+input {
+    color: black;
+    font-family: verdana;
+    font-size: 300%;
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
