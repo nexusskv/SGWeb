@@ -119,7 +119,7 @@
 			isa = PBXGroup;
 			children = (
 				11A5B88028308553007A1020 /* Application */,
-				11A5B88128308562007A1020 /* UI */,
+				11A5B88128308562007A1020 /* Main */,
 				11A5B887283086AC007A1020 /* Common */,
 				11A5B838282EFDC8007A1020 /* Main.storyboard */,
 				11A5B83B282EFDC9007A1020 /* Assets.xcassets */,
@@ -172,12 +172,12 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		11A5B88128308562007A1020 /* UI */ = {
+		11A5B88128308562007A1020 /* Main */ = {
 			isa = PBXGroup;
 			children = (
 				11A5B88228308585007A1020 /* WebViewController */,
 			);
-			path = UI;
+			path = Main;
 			sourceTree = "<group>";
 		};
 		11A5B88228308585007A1020 /* WebViewController */ = {
