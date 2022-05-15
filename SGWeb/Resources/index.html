@@ -5,19 +5,35 @@
         <title>Softgame test</title>
         <link rel="stylesheet" type="text/css" href="styles.css">
     </head>
-    
+
     <body>
         <h2>Please enter your name!</h2><br>
-        
-        <form action="">
-            <label for="fname">First name:</label><br>
-            <input type="text" id="fname" name="fname" value=""><br><br>
+        <form>
+            <label>First name</label><br>
+            <input type="text" placeholder ="Please enter name" id="firstname" novalidate><br><br>
                 
-            <label for="lname">Last name:</label><br>
-            <input type="text" id="lname" name="lname" value=""><br><br><br>
+            <label>Last name</label><br>
+            <input type="text" placeholder ="Please enter name" id="lastname" novalidate><br><br><br>
                 
-            <input type="submit" value="Submit">
+            <label>Date of birth</label><br>
+            <input type="text" id="birthdate" placeholder ="Please enter date" novalidate><br><br><br><br>
+            
+            <div id="centerbuttons">
+                <button type="submit" id="syncsubmit"> Sync </button>
+                <button type="submit" id="asyncsubmit"> Async </button>
+            </div>
         </form>
+        
+        <br><br><br><br><br>
+        <label>==================================</label><br>
+        <br><br><br><br><br>
+        
+        <p><label id="results"> Results: </label><br><br><br>
+        <p><label id="namesresult"> ... </label><br>
+        <br>
+        <p><label id="birthresult"> ... </label><br><br><br><br>
+        
+        <button type="submit" id="cleannames"> Clean Name </button>
     </body>
 </html>
 

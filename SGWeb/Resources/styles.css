@@ -26,3 +26,65 @@ input {
     margin-right: auto;
     margin-left: auto;
 }
+
+#results {
+    color: black;
+    font-family: helvetica;
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 380%;
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#namesresult {
+    color: black;
+    font-family: helvetica;
+    font-style: italic;
+    font-size: 350%;
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#birthresult {
+    color: black;
+    font-family: helvetica;
+    font-style: oblique;
+    font-size: 350%;
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#syncsubmit {
+    color: white;
+    font-family: verdana;
+    font-size: 300%;
+    text-align: center;
+}
+
+#asyncsubmit {
+    color: white;
+    font-family: verdana;
+    font-size: 300%;
+    text-align: center;
+}
+
+#cleannames {
+    color: white;
+    font-family: verdana;
+    font-size: 300%;
+    display: block;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#centerbuttons {
+  text-align: center;
+}

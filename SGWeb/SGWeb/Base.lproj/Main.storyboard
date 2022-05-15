@@ -15,28 +15,9 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hAW-Vz-bxF">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                                <color key="backgroundColor" red="1" green="0.99533268564392119" blue="0.99125494189016972" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                                <wkWebViewConfiguration key="configuration">
-                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
-                                    <wkPreferences key="preferences"/>
-                                </wkWebViewConfiguration>
-                            </wkWebView>
-                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="hAW-Vz-bxF" secondAttribute="bottom" id="PMd-fv-qRY"/>
-                            <constraint firstItem="hAW-Vz-bxF" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="RV4-SM-QKe"/>
-                            <constraint firstItem="hAW-Vz-bxF" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dlV-UD-r9p"/>
-                            <constraint firstItem="hAW-Vz-bxF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="vI4-55-nQA"/>
-                        </constraints>
                     </view>
-                    <connections>
-                        <outlet property="formWebView" destination="hAW-Vz-bxF" id="7Ci-EH-DVa"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

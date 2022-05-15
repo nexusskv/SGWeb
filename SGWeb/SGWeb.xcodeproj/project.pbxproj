@@ -19,6 +19,11 @@
 		11A5B864282EFE55007A1020 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 11A5B863282EFE55007A1020 /* WebKit.framework */; };
 		11A5B86A282F08DA007A1020 /* index.html in Resources */ = {isa = PBXBuildFile; fileRef = 11A5B869282F08DA007A1020 /* index.html */; };
 		11A5B86C282F0F82007A1020 /* styles.css in Resources */ = {isa = PBXBuildFile; fileRef = 11A5B86B282F0F82007A1020 /* styles.css */; };
+		11A5B87D28303380007A1020 /* Definitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5B87C28303380007A1020 /* Definitions.swift */; };
+		11A5B884283085BB007A1020 /* WebViewController+NavigationDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5B883283085BB007A1020 /* WebViewController+NavigationDelegate.swift */; };
+		11A5B886283085F3007A1020 /* WebViewController+ScriptMessageHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5B885283085F3007A1020 /* WebViewController+ScriptMessageHandler.swift */; };
+		11A5B88D28308702007A1020 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5B88C28308702007A1020 /* WebViewModel.swift */; };
+		11A5B88F2830870F007A1020 /* WebActionsHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A5B88E2830870F007A1020 /* WebActionsHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +60,11 @@
 		11A5B863282EFE55007A1020 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		11A5B869282F08DA007A1020 /* index.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = index.html; sourceTree = "<group>"; };
 		11A5B86B282F0F82007A1020 /* styles.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = styles.css; sourceTree = "<group>"; };
+		11A5B87C28303380007A1020 /* Definitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Definitions.swift; sourceTree = "<group>"; };
+		11A5B883283085BB007A1020 /* WebViewController+NavigationDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebViewController+NavigationDelegate.swift"; sourceTree = "<group>"; };
+		11A5B885283085F3007A1020 /* WebViewController+ScriptMessageHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WebViewController+ScriptMessageHandler.swift"; sourceTree = "<group>"; };
+		11A5B88C28308702007A1020 /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
+		11A5B88E2830870F007A1020 /* WebActionsHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebActionsHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -108,9 +118,9 @@
 		11A5B831282EFDC8007A1020 /* SGWeb */ = {
 			isa = PBXGroup;
 			children = (
-				11A5B832282EFDC8007A1020 /* AppDelegate.swift */,
-				11A5B834282EFDC8007A1020 /* SceneDelegate.swift */,
-				11A5B836282EFDC8007A1020 /* WebViewController.swift */,
+				11A5B88028308553007A1020 /* Application */,
+				11A5B88128308562007A1020 /* UI */,
+				11A5B887283086AC007A1020 /* Common */,
 				11A5B838282EFDC8007A1020 /* Main.storyboard */,
 				11A5B83B282EFDC9007A1020 /* Assets.xcassets */,
 				11A5B83D282EFDC9007A1020 /* LaunchScreen.storyboard */,
@@ -147,10 +157,79 @@
 		11A5B865282EFF61007A1020 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				11A5B86B282F0F82007A1020 /* styles.css */,
 				11A5B869282F08DA007A1020 /* index.html */,
+				11A5B86B282F0F82007A1020 /* styles.css */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		11A5B88028308553007A1020 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				11A5B832282EFDC8007A1020 /* AppDelegate.swift */,
+				11A5B834282EFDC8007A1020 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		11A5B88128308562007A1020 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				11A5B88228308585007A1020 /* WebViewController */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		11A5B88228308585007A1020 /* WebViewController */ = {
+			isa = PBXGroup;
+			children = (
+				11A5B836282EFDC8007A1020 /* WebViewController.swift */,
+				11A5B889283086DC007A1020 /* WebViewController+Managers */,
+				11A5B888283086CA007A1020 /* WebViewController+Extensions */,
+			);
+			path = WebViewController;
+			sourceTree = "<group>";
+		};
+		11A5B887283086AC007A1020 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				11A5B87C28303380007A1020 /* Definitions.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		11A5B888283086CA007A1020 /* WebViewController+Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				11A5B883283085BB007A1020 /* WebViewController+NavigationDelegate.swift */,
+				11A5B885283085F3007A1020 /* WebViewController+ScriptMessageHandler.swift */,
+			);
+			path = "WebViewController+Extensions";
+			sourceTree = "<group>";
+		};
+		11A5B889283086DC007A1020 /* WebViewController+Managers */ = {
+			isa = PBXGroup;
+			children = (
+				11A5B88A283086E7007A1020 /* WebViewModel */,
+				11A5B88B283086F1007A1020 /* WebActionsHandler */,
+			);
+			path = "WebViewController+Managers";
+			sourceTree = "<group>";
+		};
+		11A5B88A283086E7007A1020 /* WebViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				11A5B88C28308702007A1020 /* WebViewModel.swift */,
+			);
+			path = WebViewModel;
+			sourceTree = "<group>";
+		};
+		11A5B88B283086F1007A1020 /* WebActionsHandler */ = {
+			isa = PBXGroup;
+			children = (
+				11A5B88E2830870F007A1020 /* WebActionsHandler.swift */,
+			);
+			path = WebActionsHandler;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +248,8 @@
 			dependencies = (
 			);
 			name = SGWeb;
+			packageProductDependencies = (
+			);
 			productName = SGWeb;
 			productReference = 11A5B82F282EFDC8007A1020 /* SGWeb.app */;
 			productType = "com.apple.product-type.application";
@@ -241,6 +322,8 @@
 				Base,
 			);
 			mainGroup = 11A5B826282EFDC8007A1020;
+			packageReferences = (
+			);
 			productRefGroup = 11A5B830282EFDC8007A1020 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -286,9 +369,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11A5B884283085BB007A1020 /* WebViewController+NavigationDelegate.swift in Sources */,
 				11A5B837282EFDC8007A1020 /* WebViewController.swift in Sources */,
 				11A5B833282EFDC8007A1020 /* AppDelegate.swift in Sources */,
+				11A5B87D28303380007A1020 /* Definitions.swift in Sources */,
 				11A5B835282EFDC8007A1020 /* SceneDelegate.swift in Sources */,
+				11A5B886283085F3007A1020 /* WebViewController+ScriptMessageHandler.swift in Sources */,
+				11A5B88D28308702007A1020 /* WebViewModel.swift in Sources */,
+				11A5B88F2830870F007A1020 /* WebActionsHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
